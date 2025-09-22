@@ -6,9 +6,24 @@ This sample demonstrates how to customize the input stroke color of the .NET MAU
 
 ```xaml
     <StackLayout Padding="30" Spacing="20" HorizontalOptions="Center">
-    <Label Text="Enter your OTP" FontSize="24" HorizontalOptions="Center" FontAttributes="Bold"/>
-    <Syncfusion:SfOtpInput x:Name="OtpInput" Length="4" ValueChanged="OtpInput_ValueChanged" HorizontalOptions="Center" />
-</StackLayout>
+        <Label Text="Enter your OTP" FontSize="24" HorizontalOptions="Center" FontAttributes="Bold"/>
+        <Syncfusion:SfOtpInput x:Name="OtpInput" Length="4" ValueChanged="OtpInput_ValueChanged" HorizontalOptions="Center" />
+    </StackLayout>
+```
+
+```App.xaml
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Color x:Key="SfOtpInputDefaultStroke">Gray</Color>
+            <Color x:Key="SfOtpInputSuccessStroke">#35B44A</Color>
+            <Color x:Key="SfOtpInputErrorStroke">#D63D2C</Color>
+            <Color x:Key="SfOtpInputWarningStroke">#FFF100</Color>
+        </ResourceDictionary>
+    </Application.Resources>
 ```
 
 ## Requirements to run the demo
