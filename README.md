@@ -4,13 +4,14 @@ This sample demonstrates how to customize the input stroke color of the .NET MAU
 
 ## Sample
 
+***XAML***
 ```xaml
     <StackLayout Padding="30" Spacing="20" HorizontalOptions="Center">
         <Label Text="Enter your OTP" FontSize="24" HorizontalOptions="Center" FontAttributes="Bold"/>
         <Syncfusion:SfOtpInput x:Name="OtpInput" Length="4" ValueChanged="OtpInput_ValueChanged" HorizontalOptions="Center" />
     </StackLayout>
 ```
-
+***App.xaml***
 ```App.xaml
     <Application.Resources>
         <ResourceDictionary>
